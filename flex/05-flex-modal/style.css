@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -16,13 +17,18 @@ body {
 }
 
 .modal {
+  display: flex;
+  /* border: 2px solid red; */
   background: white;
   width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  gap: 16px;
 }
 
 .icon {
+  border: 3px solid blue;
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
@@ -33,6 +39,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+}
+
+.container {
+  /* border: 2px solid brown; */
+}
+
+.header {
+  /* border: 3px solid yellow; */
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .close-button {
@@ -47,7 +68,13 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid #eee;
+  /* border: 3px solid green; */
   padding: 0;
+}
+
+.text {
+  /* border: 3px solid greenyellow; */
+  margin-bottom: 16px;
 }
 
 button {
@@ -59,11 +86,13 @@ button {
 button.continue {
   background: royalblue;
   border: 1px solid royalblue;
+  /* border: 3px solid goldenrod; */
   color: white;
 }
 
 button.cancel {
   background: white;
   border: 1px solid #ddd;
+  /* border: 3px solid palevioletred; */
   color: royalblue;
 }
